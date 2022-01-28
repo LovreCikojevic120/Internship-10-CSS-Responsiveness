@@ -1,0 +1,43 @@
+.second-section{
+    margin-top: 10%;
+    padding: 0 5%;
+}
+
+.second-section-header{
+    margin-left: 15%;
+}
+
+.second-section__title{
+    font-size: 100px;
+}
+
+.second-section__description{
+    margin-top: 2%;
+    margin-right: 65%;
+    font-size: 16px;
+}
+
+.second-section-content{
+    margin: 5% 0 0 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.second-section-textbox{
+    margin-top: 5%;
+    margin-left: 20%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.second-section-textbox > img{
+    margin-right: 5%;
+}
+
+.second-section-textbox__title{
+    font-size: 36px;
+}
+
+.second-section-textbox__description{
+    margin: 2% 30% 10% 0;
+}
