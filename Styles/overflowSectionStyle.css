@@ -1,0 +1,36 @@
+.overflow-section{
+    margin-top: 5%;
+}
+
+.overflow-section__title{
+    margin-left: 10%;
+    font-size: 3em;
+}
+
+.overflow-section-image-wrapper{
+    margin-top: 2.5%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.overflow-section-image-wrapper > img{
+    margin-right: 3%;
+    border: solid transparent 1px;
+    border-radius: 32px;
+}
+
+.overflow-section-background{
+    position: relative;
+    width: 70%;
+    height: 50%;
+    background-color: rgba(188, 206, 224, 0.12);
+    top: 341%;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .overflow-section{
+        margin-top: 10%;
+    }
+}

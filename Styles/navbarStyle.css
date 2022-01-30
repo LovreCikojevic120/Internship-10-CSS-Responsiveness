@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: Fuse V.2 Display;
-    font-weight: bold;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 a{
@@ -56,4 +56,15 @@ button{
 
 .navbar-button{
     margin-right: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .navbar{
+        padding: 5%;
+    }
+
+    .navbar-link-wrapper{
+        display: none;
+    }
 }

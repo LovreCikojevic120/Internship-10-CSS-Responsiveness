@@ -1,0 +1,67 @@
+.cool-number-section{
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cool-number-section__title{
+    height: fit-content;
+    padding: 0 5%;
+    font-size: 5em;
+    position: sticky;
+    top: 5%;
+}
+
+.cool-number-section-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+
+.cool-number-textbox{
+    padding: 0 15%;
+    padding-bottom: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.cool-number{
+    font-size: 5em;
+    margin-right: 3%;
+    color: #44c79b60;
+}
+
+.cool-section-textbox-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.cool-number-section-textbox__title{
+    padding-bottom: 5%;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .cool-number-section{
+        flex-direction: column;
+    }
+
+    .cool-number-section__title{
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .cool-number-section__title{
+        text-align: center;
+        margin-bottom: 35%;
+    }
+
+    .cool-number-textbox{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
