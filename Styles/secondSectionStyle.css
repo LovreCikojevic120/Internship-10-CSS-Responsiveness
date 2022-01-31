@@ -9,12 +9,13 @@
 
 .second-section__title{
     font-size: 7em;
+    line-height: 112px;
 }
 
 .second-section__description{
     display: inline-block;
     margin-top: 2%;
-    width: 40%;
+    width: 50%;
     font-size: 1em;
 }
 
@@ -29,10 +30,13 @@
 }
 
 .second-section-textbox{
-    margin-top: 5%;
     margin-left: 20%;
     display: flex;
     align-items: flex-start;
+}
+
+.second-section-textbox:not(:first-child){
+    margin-top: 10%;
 }
 
 .second-section-textbox > img{
@@ -40,11 +44,12 @@
 }
 
 .second-section-textbox__title{
-    font-size: 2em;
+    font-size: 36px;
+    line-height: 44px;
 }
 
 .second-section-textbox__description{
-    margin: 2% 30% 10% 0;
+    margin: 2% 15% 10% 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -54,11 +59,14 @@
     }
 
     .second-section__title{
-        font-size: 2em;
+        font-size: 56px;
+        line-height: 60px;
     }
 
     .second-section__description{
         width: 100%;
+        margin-top: 5%;
+        line-height: 24px;
     }
 
     .second-section-content{
@@ -67,7 +75,11 @@
     }
 
     .second-section-content-textboxes{
-        padding-left: 15%;
+        padding: 10% 0 0 20%;
+    }
+
+    .second-section-textbox{
+        
     }
 
     .second-section-image-desktop{
@@ -76,11 +88,19 @@
 
     .second-section-image-mobile{
         display: unset;
-        width: 50%;
-        margin: auto;
+        margin-top: 20%;
+        margin-left: 15%;
     }
 
     .second-section-textbox{
         margin-left: 0;
     }
+}
+
+@media screen and (min-width:2116px){
+
+    .second-section{
+        margin: 10% 20%;
+        margin-bottom: 0;
+    }    
 }

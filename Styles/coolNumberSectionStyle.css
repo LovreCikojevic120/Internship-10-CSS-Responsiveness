@@ -2,12 +2,13 @@
     margin: 10%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .cool-number-section__title{
     height: fit-content;
-    padding: 0 5%;
-    font-size: 5em;
+    font-size: 112px;
+    line-height: 112px;
     position: sticky;
     top: 5%;
 }
@@ -19,44 +20,61 @@
 }
 
 .cool-number-textbox{
-    padding: 0 15%;
+    padding: 0 10%;
     padding-bottom: 30%;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 .cool-number{
-    font-size: 5em;
-    margin-right: 3%;
+    font-size: 112px;
+    line-height: 120px;
+    margin-right: 5%;
     color: #44c79b60;
+    position: relative;
+}
+
+.cool-number::before{
+    content: "";
+    position: absolute;
+    top:50%;
+    left: 45%;
+    border: 5px solid #5cc2a0;
+    border-radius: 50%;
+}
+
+.cool-number-textbox:not(:last-child) > .cool-number::after{
+    content: "";
+    position: absolute;
+    right: 50%;
+    top:70%;
+    height: 200px;
+    border-left: 2px dashed #5cc2a050;
 }
 
 .cool-section-textbox-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 80%;
+    justify-content: flex-start;
 }
 
 .cool-number-section-textbox__title{
-    padding-bottom: 5%;
-    font-size: 16px;
+    padding-bottom: 2%;
+    font-size: 1em;
 }
 
 @media screen and (max-width: 800px) {
     .cool-number-section{
         flex-direction: column;
+        margin: 0 5%;
     }
 
     .cool-number-section__title{
         position: relative;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    
-    .cool-number-section__title{
-        text-align: center;
+        text-align: start;
+        font-size: 56px;
+        line-height: 60px;
+        margin-top: 20%;
         margin-bottom: 35%;
     }
 
@@ -64,4 +82,24 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    .cool-number{
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .cool-number::before{
+        border: none;
+    }
+
+    .cool-number-textbox:not(:last-child) > .cool-number::after{
+        border: none;
+    }
+}
+
+@media screen and (min-width:2116px){
+
+    .cool-number-section{
+        margin: initial 20%;
+    }    
 }

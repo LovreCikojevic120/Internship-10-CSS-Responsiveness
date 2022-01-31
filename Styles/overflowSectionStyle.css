@@ -1,14 +1,17 @@
 .overflow-section{
-    margin-top: 5%;
+    position: relative;
 }
 
 .overflow-section__title{
+    padding-top: 5%;
     margin-left: 10%;
-    font-size: 3em;
+    font-size: 56px;
+    line-height: 60px;
+    color: #282d30;
 }
 
 .overflow-section-image-wrapper{
-    margin-top: 2.5%;
+    margin-top: 2%;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -18,19 +21,57 @@
     margin-right: 3%;
     border: solid transparent 1px;
     border-radius: 32px;
+    height: auto;
+}
+
+.overflow-section-image-wrapper > img:last-child{
+    margin-right: 0;
 }
 
 .overflow-section-background{
-    position: relative;
-    width: 70%;
-    height: 50%;
+    position: absolute;
+    width: 90%;
+    height: 80%;
     background-color: rgba(188, 206, 224, 0.12);
-    top: 341%;
+    border: solid 1px rgba(188, 206, 224, 0.12);
+    border-radius: 40px;
+    top:0;
+    left: -100px;
+    z-index: -1;
 }
 
 @media screen and (max-width: 1000px) {
-    
+
+    .overflow-section__title{
+        margin-left: 0;
+        padding: 10% 15%;
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .overflow-section-image-wrapper{
+        margin-top: 5%;
+        height: 160px;
+    }
+
+    .overflow-section-background{
+        width: 110%;
+    }
+}
+
+@media screen and (min-width:2116px){
+
     .overflow-section{
-        margin-top: 10%;
+        margin: 0 20%;
+        justify-content: center;
+    }
+
+    .overflow-section__title{
+        margin-left: 20%;
+        padding-top: 4%;
+    }
+
+    .overflow-section-image-wrapper{
+        justify-content: center;
     }
 }
