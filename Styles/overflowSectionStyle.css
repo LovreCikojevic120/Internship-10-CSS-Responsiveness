@@ -40,7 +40,7 @@
     z-index: -1;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
 
     .overflow-section__title{
         margin-left: 0;

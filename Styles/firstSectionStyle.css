@@ -34,11 +34,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 10%;
 }
 
 .first-section-textbox{
-    margin-top: 10%;
-    margin-left: 2%;
+    margin-top: 4%;
+    margin-left: 4%;
     width: 225px;
     background-color: white;
     display: flex;
@@ -93,7 +94,7 @@
     border-radius: 40px;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
 
     .first-section-header{
         margin-left: 0;

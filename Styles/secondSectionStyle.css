@@ -52,7 +52,7 @@
     margin: 2% 15% 10% 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     
     .second-section-header{
         margin-left: 0%;
